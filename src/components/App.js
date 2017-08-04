@@ -1,9 +1,13 @@
 import React from 'react'
 
 import TodosContainer from '../containers/TodosContainer'
+import AddNewTodoButtonContainer from '../containers/AddNewTodoButtonContainer'
 
 const App = () => (
-    <TodosContainer />
+    <div>
+	<TodosContainer />
+	<AddNewTodoButtonContainer />
+    </div>
 )
 export default App
 
