@@ -2,5 +2,21 @@
   "name": "todo",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-latest": "^6.24.1",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server -w"
+  }
 }
