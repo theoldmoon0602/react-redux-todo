@@ -5,8 +5,8 @@ import AddNewTodoButtonContainer from '../containers/AddNewTodoButtonContainer'
 
 const App = () => (
     <div>
-	<TodosContainer />
 	<AddNewTodoButtonContainer />
+	<TodosContainer />
     </div>
 )
 export default App

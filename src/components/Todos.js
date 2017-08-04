@@ -1,13 +1,14 @@
 import React from 'react'
+import Todo from './Todo'
 
 
-const Todos = ({todos}) => (
+const Todos = ({todos, DoneTodo}) => (
     <ul>
 	{
 	    todos.map((todo, i) => {
 		return (
 		    <li key={i.toString()}>
-			{todo.content}
+			<Todo todo={todo} DoneTodo={DoneTodo} />
 		    </li>
 		)
 	    })

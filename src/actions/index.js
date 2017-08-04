@@ -9,6 +9,13 @@ const AddNewTodo = (content) => {
 	content: content
     }
 }
+const DoneTodo = (id) => {
+    return {
+	type: ActionTypes.DONE_TODO,
+	id,
+    }
+}
 export default {
-    AddNewTodo
+    AddNewTodo,
+    DoneTodo,
 }

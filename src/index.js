@@ -12,12 +12,14 @@ import App from './components/App'
 // store. 唯一の状態を持つ
 const store = createStore(Reducer)
 
-store.dispatch(Actions.AddNewTodo('todo1'))
-store.dispatch(Actions.AddNewTodo('todo2'))
-
-ReactDOM.render(
-    <Provider store={store}>
-	<App />
-    </Provider>,
-    document.getElementById('root')
-)
+var render = () => {
+    console.log(store.getState())
+    return ReactDOM.render(
+	<Provider store={store}>
+	    <App />
+	</Provider>,
+	document.getElementById('root')
+    )
+}
+store.subscribe(render)
+render()
