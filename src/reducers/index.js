@@ -8,7 +8,7 @@ function AddNewTodo(state, action) {
 	    ...state.todos,
 	    {
 		state: 'TODO',
-		action: action.content
+		content: action.content
 	    }
 	]
     }

@@ -6,7 +6,7 @@ import ActionTypes from './actionTypes'
 const AddNewTodo = (content) => {
     return {
 	type: ActionTypes.ADD_NEW_TODO,
-	content
+	content: content
     }
 }
 export default {
